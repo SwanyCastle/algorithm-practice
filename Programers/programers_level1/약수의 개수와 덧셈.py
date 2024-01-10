@@ -1,3 +1,4 @@
+# 내가 푼 문제
 def solution(left: int, right: int) -> int:
     sum:int = 0
     num_list: list = [num for num in range(left, right+1)]
@@ -12,5 +13,12 @@ def solution(left: int, right: int) -> int:
             sum -= num
     return sum
 
-rt: int = solution(13, 17)
-print(rt)
+# 다른사람이 푼 문제 수학 ㄷㄷ
+def solution(left, right):
+    answer = 0
+    for i in range(left,right+1):
+        if int(i**0.5)==i**0.5:
+            answer -= i
+        else:
+            answer += i
+    return answer
