@@ -8,4 +8,3 @@ def alpha_string46(s):
 
 rt: bool = solution("1234")
 print(rt)
-
