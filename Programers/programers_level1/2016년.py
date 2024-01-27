@@ -1,4 +1,4 @@
-# def solution(a, b):
+# 나의 풀이
 def solution(a, b):
     day_dict: dict = {
         0: "SUN",
@@ -39,6 +39,20 @@ def solution(a, b):
                 day_idx = (day_idx+i) % 7
 
     return year_2016[a][b]
+
+# 다른 풀이 1 - datetime 무친 ㄷㄷㄷ
+import datetime
+
+def getDayName(a,b):
+    t = 'MON TUE WED THU FRI SAT SUN'.split()
+    return t[datetime.datetime(2016, a, b).weekday()]
+
+#다른 풀이 2
+def getDayName(a,b):
+    month = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    day = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU']
+    return day[(sum(month[:a-1])+b-1)%7]
+
 rt1 = solution(5, 24)
 print(rt1)
 
