@@ -8,7 +8,7 @@ def solution(nums) -> int:
             return len(i)
     return len(combi_list)
 
-# 다른 풀이 - ㄷㄷ 이게 뭐냐 ..
+# 다른 풀이 - ㄷㄷ 이게 뭐냐 ...
 def solution(ls):
     return min(len(ls)/2, len(set(ls)))
 
