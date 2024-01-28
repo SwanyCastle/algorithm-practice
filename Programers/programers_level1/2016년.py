@@ -55,7 +55,3 @@ def getDayName(a,b):
 
 rt1 = solution(5, 24)
 print(rt1)
-
-
-
-
